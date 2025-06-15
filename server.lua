@@ -1,3 +1,7 @@
+if GetCurrentResourceName() ~= "trplr_radio" then
+    return print("^6Changing the resource's name wont't let the resource start, ^1" .. GetCurrentResourceName() .. "^0 > ^2 trplr_radio ^7")
+end
+
 local QBCore = exports['qb-core']:GetCoreObject()
 
 QBCore.Functions.CreateUseableItem("radio", function(source)

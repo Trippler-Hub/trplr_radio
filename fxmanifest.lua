@@ -1,8 +1,8 @@
 fx_version 'cerulean'
 game 'gta5'
 
-description 'QB-Radio'
-version '1.2.2'
+description 'QB-Radio Edited By Lenix'
+version '1.2.3'
 
 shared_script {
   '@qb-core/shared/locale.lua',
@@ -29,3 +29,5 @@ files {
 dependency 'pma-voice'
 
 lua54 'yes'
+
+provide 'qb-radio'
