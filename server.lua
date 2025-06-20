@@ -1,7 +1,3 @@
-if GetCurrentResourceName() ~= "trplr_radio" then
-    return print("^6Changing the resource's name wont't let the resource start, ^1" .. GetCurrentResourceName() .. "^0 > ^2 trplr_radio ^7")
-end
-
 CreateThread(function()
    print("  ____              _                      _        ")
    print(" | __ )   _   _    | |       ___   _ __   (_) __  __")
@@ -10,6 +6,10 @@ CreateThread(function()
    print(" |____/   \\__, |   |_____| \\___|  |_| |_| |_| /_/\\\\ ")
    print("          |___/                                     ")
 )
+
+if GetCurrentResourceName() ~= "trplr_vehiclekeys" then
+    return print("^6Changing the resource's name wont't let the resource start, ^1" .. GetCurrentResourceName() .. "^0 > ^2 trplr_vehiclekeys ^7")
+end
 
 local QBCore = exports['qb-core']:GetCoreObject()
 
